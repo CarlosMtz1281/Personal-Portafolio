@@ -51,6 +51,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+    border-radius: 0px;
 }
 .logo{
   height: 7vh;
@@ -70,6 +71,8 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    size: 200%;
 }
 .social-icon a::before {
     content: "";
@@ -85,9 +88,12 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-    width: 40%;
+    width: 60%;
     z-index: 1;
     transition: 0.3s ease-in-out;
+
+    filter: brightness(100) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+
 }
 .social-icon a:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
