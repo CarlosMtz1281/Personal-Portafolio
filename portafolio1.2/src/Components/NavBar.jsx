@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/logo2.png';
 
+
+
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+
+import git from '../assets/icons/github.svg'
 
 export const NavBar = () => {
 
@@ -40,7 +44,7 @@ export const NavBar = () => {
 
 
   const handleClick = () => {
-    window.open("https://www.linkedin.com/in/carlosmartinezrdz/");
+    window.open("https://www.linkedin.com/in/carlosmartinezrdz");
   };
 
   const [activeLink, setActiveLink] = useState('home');
@@ -82,8 +86,13 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
 
+            <div className="social-icon">
+                <a href="https://github.com/CarlosMtz1281" target="_blank"><img src={git} alt="" /></a>
+
+              </div>
+
               <HashLink to='#connect'>
-                <button className="vvd" onClick={handleClick}><span>Let’s Connect</span></button>
+                <button className="vvd" onClick={handleClick} style={{borderRadius: '0px'}}><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
@@ -94,6 +103,3 @@ export const NavBar = () => {
 }
 
 
-<button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} id="myBtn" title="Go to top">
-      Top
-    </button>
