@@ -20,7 +20,7 @@ export default function mobileV(){
                 <div className="social-iconM">
                     <a href="https://github.com/CarlosMtz1281" target="_blank"><img src={git} alt="" /></a>
                     <a href="https://www.linkedin.com/in/carlosmartinezrdz" target="_blank"><img src={linkdin} alt="" /></a>
-                    <a href="https://www.linkedin.com/in/carlosmartinezrdz" target="_blank"><img src={instagram} alt="" /></a>
+                    <a href="https://www.instagram.com/carlos.mr.04/" target="_blank"><img src={instagram} alt="" /></a>
                     <a href="mailto:carlos.mtz@hotmail.com" target="_blank"><img src={email} alt="" /></a>
 
                 </div>
