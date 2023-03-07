@@ -473,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 .bannerSubContainer{
-  height: 5vh;
+  height: 7vh;
   text-align: right;
   margin-right: 10vw;
 }
@@ -577,6 +577,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skillsColage{
   width: 90vw;
+}
+.skillsTxtM{
+  padding: 10vw;
 }
 /*Projects MOBILE SECTION*/
 
