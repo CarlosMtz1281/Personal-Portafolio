@@ -1,11 +1,12 @@
 :root{
   --primary : #080c20;
-  --secondary : #dfdede;
+  --secondary : #3c4b60;
   --accent: #1B88F5;
 }
 
 html{
   background-color: var(--primary) !important;
+  overflow-x: hidden;
 }
 
 body,#root {
@@ -15,6 +16,9 @@ body,#root {
   background-color: var(--primary) !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  overflow-x: hidden;
+
+
 
 }
 /* #0e1a35
@@ -28,6 +32,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -435,24 +440,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* MOBILE VERSON*/
 
+.mobileWrap{
+
+}
+
+.bannerM-wrap{
+  margin-top: -3vh;
+}
+
 .mobileCarlos{
   display: block;
   border-radius: 50%;
   height: 40vh;
   margin: auto;
-  margin-top: -10vh
+  margin-top: 0vh
 
 }
 
 .mHeader{
   margin: auto;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
+.mSubTitle{
+  margin-left: 5vw;
+
+}
+.bannerSubtittleM{
+  margin-top: 2vh;
+  margin-bottom: 6vh;
+  height: 15vh;
+
+}
+.bannerSubContainer{
+  height: 5vh;
+  text-align: right;
+  margin-right: 10vw;
+}
+
 .mSHeader{
   margin: auto;
   text-align: center;
-  margin-top: 0vh;
+  margin-top: 5vh;
   margin-bottom: 2vh;
 }
 
@@ -513,4 +542,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .social-iconMa:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/*About me section*/
+
+.MSectionTittle{
+  font-size: 38px;
+  margin-top: 2vh;
+  text-align: left;
+}
+.aboutMeM{
+  background: var(--secondary);
+  color: white;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  height: 50vh;
+  padding-top: 10vh;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+
+/*SKILLS MOBILE SECTION*/
+
+.skillsMobile{
+  text-align: center;
+  margin-top: 5vh;
+}
+.MSectionTittle2{
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 4vh;
+  margin-top: -2vh;
+}
+.skillsColage{
+  width: 90vw;
+}
+/*Projects MOBILE SECTION*/
+
+.MSectionTittle3{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 4vh;
+  margin-top: 5vh;
+}
+
+.projectItemM{
+  border-radius: 10px;
+  overflow: hidden;
+  height: 65vh;
+  width: 70vw;
+  background-color: #3c4b60;
+  margin: 0 auto 15px auto;
+
+
 }
