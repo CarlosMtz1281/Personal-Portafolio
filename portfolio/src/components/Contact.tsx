@@ -10,12 +10,7 @@ const contactLinks = [
     value: "carlosh.mtz@hotmail.com",
     href: "mailto:carlosh.mtz@hotmail.com",
   },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+52 811 468 9674",
-    href: "tel:+528114689674",
-  },
+
   {
     icon: Linkedin,
     label: "LinkedIn",
@@ -47,7 +42,7 @@ export default function Contact() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {contactLinks.map((link, i) => (
             <AnimatedSection key={link.label} delay={i * 0.08}>
               <a

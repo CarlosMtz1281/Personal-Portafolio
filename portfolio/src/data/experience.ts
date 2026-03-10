@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     company: "KATCON",
     role: "Software Engineer Intern",
     location: "Monterrey, Mexico",
-    period: "Oct 2023 — Present",
+    period: "Oct 2023 — Jul 2025",
     description: "International automotive part manufacturing company",
     bullets: [
       "Deployed a web app using React, Next.js and PostgreSQL, now used as an internal tool across teams",
@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
       "Implemented internationalization routing supporting English, Spanish and Chinese",
       "Developed software solutions for financial and manufacturing processes, earning positive leadership feedback",
     ],
-    tech: ["React", "Next.js", "PostgreSQL", "AWS"],
+    tech: ["React", "Next.js", "PostgreSQL", "AWS", "Python", "IOT"],
   },
   {
     company: "MLH x Meta",
@@ -36,6 +36,7 @@ export const experiences: Experience[] = [
     ],
     tech: ["Python", "Docker", "Linux", "CI/CD"],
   },
+  
   {
     company: "MedicFlow",
     role: "Software Engineer",
@@ -48,5 +49,18 @@ export const experiences: Experience[] = [
       "Integrated AI models for speech recognition and LLM-powered text processing",
     ],
     tech: ["React Native", "Next.js", "JavaScript", "AI/ML"],
+  },
+  {
+    company: "Proyecto 99",
+    role: "Software Developer",
+    location: "Monterrey, Mexico",
+    period: "Dec 2022 — Feb 2023",
+    description: "Education nonprofit organization based in Monterrey, Mexico",
+    bullets: [
+      "Developed a web application using React to manage operations and allow students to sign up for courses",
+      "Learned and applied SCRUM methodology and software development processes",
+      "Deployed the project which is now used to manage student inscriptions",
+    ],
+    tech: ["React", "SCRUM", "JavaScript"],
   },
 ];
