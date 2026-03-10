@@ -13,7 +13,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "DevOps & Data Pipeline",
+    title: "PathExplorer",
     subtitle: "Full-Stack Platform with Scalable Infrastructure",
     description:
       "Built a DevOps pipeline, scalable data pipeline, and a fast Next.js frontend backed by Redis for lightning-fast access. Focused on collaboration, system design, and building with quality from day one through thorough QA testing.",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       "A web application that optimizes agricultural water consumption using IoT sensors built with ESP-32 microcontrollers. Integrates weather API data with real-time sensor readings to generate smart irrigation plans.",
     tech: ["Next.js", "Flask", "Firebase", "ESP-32", "IoT"],
     gradient: "from-emerald-100 to-green-100",
-    date: "Nov 2024",
+    date: "Nov 2023",
   },
   {
     title: "Ixpolin Education",
@@ -58,22 +58,5 @@ export const projects: Project[] = [
     gradient: "from-sky-100 to-cyan-100",
     date: "Oct 2024",
   },
-  {
-    title: "MedicFlow",
-    subtitle: "AI-Powered Medical Care Platform",
-    description:
-      "A mobile and web application improving medical care with AI. Features speech recognition for doctor-patient interactions and LLM-powered text processing for medical record summarization.",
-    tech: ["React Native", "Next.js", "AI/ML", "Speech Recognition"],
-    gradient: "from-blue-100 to-violet-100",
-    date: "Dec 2023",
-  },
-  {
-    title: "KATCON Internal Tools",
-    subtitle: "Enterprise Web Application",
-    description:
-      "An internal web application for an international automotive manufacturer, managing financial and manufacturing processes with full internationalization support for English, Spanish, and Chinese.",
-    tech: ["React", "Next.js", "PostgreSQL", "AWS"],
-    gradient: "from-amber-100 to-orange-100",
-    date: "Oct 2023",
-  },
+
 ];
