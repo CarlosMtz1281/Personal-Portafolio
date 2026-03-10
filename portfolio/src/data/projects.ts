@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   tech: string[];
   image?: string;
+  video?: string;
   github?: string;
   live?: string;
   gradient: string;
@@ -11,6 +12,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "DevOps & Data Pipeline",
+    subtitle: "Full-Stack Platform with Scalable Infrastructure",
+    description:
+      "Built a DevOps pipeline, scalable data pipeline, and a fast Next.js frontend backed by Redis for lightning-fast access. Focused on collaboration, system design, and building with quality from day one through thorough QA testing.",
+    tech: ["Next.js", "Redis", "DevOps", "CI/CD", "Data Pipelines", "QA"],
+    video: "/projects/devops-pipeline.mp4",
+    gradient: "from-indigo-100 to-purple-100",
+    date: "2025",
+  },
   {
     title: "Palestra",
     subtitle: "Marketplace & Web Conference for Education",

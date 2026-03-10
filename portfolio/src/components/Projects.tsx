@@ -21,11 +21,20 @@ export default function Projects() {
           {projects.map((project, i) => (
             <AnimatedSection key={project.title} delay={i * 0.08}>
               <div className="group rounded-2xl glass overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                {/* Image / Gradient Placeholder */}
+                {/* Media: Video / Image / Gradient Placeholder */}
                 <div
                   className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
                 >
-                  {project.image ? (
+                  {project.video ? (
+                    <video
+                      src={project.video}
+                      muted
+                      loop
+                      playsInline
+                      autoPlay
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : project.image ? (
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -48,7 +57,7 @@ export default function Projects() {
                       />
                     </div>
                   )}
-                  <div className="absolute top-4 right-4">
+                  <div className="absolute top-4 right-4 z-10">
                     <span className="px-2.5 py-1 text-xs text-zinc-600 bg-white/80 backdrop-blur-sm rounded-md border border-zinc-200/60 font-medium">
                       {project.date}
                     </span>
