@@ -10,6 +10,19 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    company: "MLH x Meta",
+    role: "Production Engineering Fellow",
+    location: "Remote",
+    period: "Jun 2024 — Sep 2024",
+    description: "Major League Hacking Fellowship collaborating with Meta",
+    bullets: [
+      "Mentored by Production Engineers from Meta to configure and administrate Linux servers",
+      "Implemented CI/CD pipelines with Python to automate testing and deployment",
+      "Configured Docker containers and monitored server performance using htop and iostat",
+    ],
+    tech: ["Python", "Docker", "Linux", "CI/CD"],
+  },
+  {
     company: "KATCON",
     role: "Software Engineer Intern",
     location: "Monterrey, Mexico",
@@ -23,20 +36,6 @@ export const experiences: Experience[] = [
     ],
     tech: ["React", "Next.js", "PostgreSQL", "AWS", "Python", "IOT"],
   },
-  {
-    company: "MLH x Meta",
-    role: "Production Engineering Fellow",
-    location: "Remote",
-    period: "Jun 2024 — Sep 2024",
-    description: "Major League Hacking Fellowship collaborating with Meta",
-    bullets: [
-      "Mentored by Production Engineers from Meta to configure and administrate Linux servers",
-      "Implemented CI/CD pipelines with Python to automate testing and deployment",
-      "Configured Docker containers and monitored server performance using htop and iostat",
-    ],
-    tech: ["Python", "Docker", "Linux", "CI/CD"],
-  },
-  
   {
     company: "MedicFlow",
     role: "Software Engineer",

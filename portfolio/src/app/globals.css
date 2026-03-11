@@ -13,8 +13,9 @@ html {
 }
 
 body {
-  background: #fafafa;
+  background: #0a0a0f;
   overflow-x: hidden;
+  color: #f0f0f5;
 }
 
 /* Scrollbar */
@@ -23,16 +24,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fafafa;
+  background: #0a0a0f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d4d4d8;
+  background: #1e1e2e;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1aa;
+  background: rgba(0, 217, 255, 0.3);
 }
 
 /* Blob animation delays */
@@ -46,21 +47,31 @@ body {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
+  background: linear-gradient(135deg, #00d9ff, #0ea5e9, #6366f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Glass card utility — light theme */
+/* Glass card utility — dark theme */
 .glass {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* Accent glow utility */
+.accent-glow {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.15), 0 0 40px rgba(0, 217, 255, 0.05);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(99, 102, 241, 0.2);
-  color: #18181b;
+  background: rgba(0, 217, 255, 0.2);
+  color: #f0f0f5;
+}
+
+/* Pause marquee on hover */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
 }
